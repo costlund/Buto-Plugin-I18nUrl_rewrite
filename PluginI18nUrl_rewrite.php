@@ -10,8 +10,13 @@ class PluginI18nUrl_rewrite{
      */
     if(
       $element->get('type')=='a' && 
+      !$element->get('settings/i18n_url_rewrite_omit') && 
       $element->get('attribute/href') && 
-      $element->get('attribute/href')!='#'){
+      $element->get('attribute/href')!='#' &&
+      substr($element->get('attribute/href'), 0, 7)!='mailto:' &&
+      substr($element->get('attribute/href'), 0, 11)!='javascript:'
+      )
+    {
       $element->set('attribute/href', wfRequest::$url_i18n.$element->get('attribute/href'));
     }
     /**

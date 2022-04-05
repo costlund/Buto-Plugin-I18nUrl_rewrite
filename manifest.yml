@@ -1,8 +1,12 @@
-version: 1.0.0
+version: 1.1.0
 history:
+  1.1.0:
+    date: '2022-04-04'
+    title: 'Element'
+    description: 'One could omit rewrite on a element. Also skip if href is prefixed with mailto or javascript.'
   1.0.0:
     date: '2020-12-10'
-    title: 'First version.'
+    title: 'First version'
     description: 'Manifest created.'
 plugin: {  }
 sys:
