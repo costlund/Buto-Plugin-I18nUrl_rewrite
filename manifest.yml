@@ -1,5 +1,9 @@
-version: 1.2.0
+version: 1.3.0
 history:
+  1.3.0:
+    date: '2022-06-02'
+    title: 'PDF'
+    description: 'Skip rewrite if href is to a pdf file.'
   1.2.0:
     date: '2022-05-06'
     title: 'Http'
