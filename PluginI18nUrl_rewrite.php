@@ -22,7 +22,7 @@ class PluginI18nUrl_rewrite{
       $element->get('type')=='a' && 
       !$element->get('settings/i18n_url_rewrite_omit') && 
       $element->get('attribute/href') && 
-      $element->get('attribute/href')!='#' &&
+      substr($element->get('attribute/href'), 0, 1)!='#' &&
       substr($element->get('attribute/href'), 0, 7)!='mailto:' &&
       substr($element->get('attribute/href'), 0, 11)!='javascript:' && 
       substr($element->get('attribute/href'), 0, 5)!='http:' && 
